@@ -6,7 +6,7 @@ body {
   color: #404040;
   position: relative;
   background: #FFF;
-  display: flex;
+  /*display: flex;*/
   flex-flow: column;
   height: 100vh;
 }
