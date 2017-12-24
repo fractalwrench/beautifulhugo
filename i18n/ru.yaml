@@ -31,10 +31,3 @@
   translation: "Навигация"
 - id: languageSwitcherLabel
   translation: "Язык"
-- id: gcseLabelShort
-  translation: "Поиск"
-- id: gcseLabelLong
-  translation: "Поиск по {{ .Site.Title }}"
-- id: gcseClose
-  translation: "Закрыть"
-

@@ -29,10 +29,3 @@
 # Navigation
 - id: toggleNavigation
   translation: "メニューを切り替え"
-- id: gcseLabelShort
-  translation: "検索"
-- id: gcseLabelLong
-  translation: "{{ .Site.Title }}を検索"
-- id: gcseClose
-  translation: "閉じる"
-

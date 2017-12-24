@@ -31,9 +31,3 @@
   translation: "Navigation"
 - id: languageSwitcherLabel
   translation: "Sprache"
-- id: gcseLabelShort
-  translation: "Suche"
-- id: gcseLabelLong
-  translation: "Suche {{ .Site.Title }}"
-- id: gcseClose
-  translation: "Schließen"
