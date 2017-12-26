@@ -613,3 +613,8 @@ td.code pre {
 td.gutter {
   padding-top: 3px;
 }
+
+.font-icon {
+    font-size: 28px;
+    padding: 8px;
+}

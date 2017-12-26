@@ -2,40 +2,34 @@
 id = "email"
 url = "mailto:%s"
 title = "Email me"
-icon = "fa-envelope"
+icon = "icon-envelope-o"
 
 [[social_icons]]
 id = "github"
 url = "https://github.com/%s"
 title = "GitHub"
-icon = "fa-github"
+icon = "icon-github"
 
 [[social_icons]]
 id = "twitter"
 url = "https://twitter.com/%s"
 title = "Twitter"
-icon = "fa-twitter"
+icon = "icon-twitter"
 
 [[social_icons]]
 id = "reddit"
 url = "https://reddit.com/u/%s"
 title = "Reddit"
-icon = "fa-reddit-alien"
+icon = "icon-reddit-alien"
 
 [[social_icons]]
 id = "linkedin"
 url = "https://linkedin.com/in/%s"
 title = "LinkedIn"
-icon = "fa-linkedin"
+icon = "icon-linkedin"
 
 [[social_icons]]
 id = "stackoverflow"
 url = "https://stackoverflow.com/%s"
 title = "StackOverflow"
-icon = "fa-stack-overflow"
-
-[[social_icons]]
-id = "paypal"
-url = "https://paypal.me/%s"
-title = "PayPal"
-icon = "fa-paypal"
+icon = "icon-stack-overflow"

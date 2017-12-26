@@ -7,10 +7,7 @@
             {{- if isset $.Site.Author .id }}
               <li>
                 <a href="{{ printf .url (index $.Site.Author .id) }}" title="{{ .title }}">
-                  <span class="fa-stack fa-lg">
-                    <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa {{ .icon }} fa-stack-1x fa-inverse"></i>
-                  </span>
+                    <i class="font-icon {{ .icon }}"></i>
                 </a>
               </li>
             {{- end -}}
@@ -18,10 +15,7 @@
           {{ if .Site.Params.rss }}
           <li>
             <a href="{{ "index.xml" | absLangURL }}" title="RSS">
-              <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
-              </span>
+                <i class="font-icon icon-rss"></i>
             </a>
           </li>
           {{ end }}
@@ -53,13 +47,12 @@
   </div>
 </footer>
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+<link rel="stylesheet" href="css/fonticons.css"></head>
+<link rel="stylesheet" href="{{ "css/highlight.min.css" | absURL }}" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
 
-<link rel="stylesheet" href="{{ "css/highlight.min.css" | absURL }}" />
-
-<script async src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
-<script async src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script src="{{ "js/main.js" | absURL }}"></script>
 <script src="{{ "js/highlight.min.js" | absURL }}"></script>
 <script> hljs.initHighlightingOnLoad(); </script>
