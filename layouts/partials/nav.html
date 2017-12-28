@@ -3,8 +3,8 @@
   <div class="navbar-container">
     <a class="navbar-title" href="{{ "" | absLangURL }}">{{ .Site.Title }}</a>
 
-    <div class="navbar-collapse" id="main-navbar">
-      <ul class="nav navbar-nav navbar-right">
+    <div id="main-navbar">
+      <ul class="nav navbar-link">
         {{ range .Site.Menus.main.ByWeight }}
         <li>
           <a title="{{ .Name }}" href="{{ .URL  | relLangURL }}">{{ .Name }}</a>
