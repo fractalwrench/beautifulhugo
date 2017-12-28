@@ -1,49 +1,45 @@
 <footer>
-  <div>
     <div>
-      <div>
-        <ul class="list-inline">
-          {{ range .Site.Data.beautifulhugo.social.social_icons }}
-            {{- if isset $.Site.Author .id }}
-              <li>
-                <a href="{{ printf .url (index $.Site.Author .id) }}" title="{{ .title }}">
-                    <i class="font-icon {{ .icon }}"></i>
-                </a>
-              </li>
-            {{- end -}}
-          {{ end }}
-          {{ if .Site.Params.rss }}
+    <ul class="list-inline">
+      {{ range .Site.Data.beautifulhugo.social.social_icons }}
+        {{- if isset $.Site.Author .id }}
           <li>
-            <a href="{{ "index.xml" | absLangURL }}" title="RSS">
-                <i class="font-icon icon-rss"></i>
+            <a href="{{ printf .url (index $.Site.Author .id) }}" title="{{ .title }}">
+                <i class="font-icon {{ .icon }}"></i>
             </a>
           </li>
-          {{ end }}
-        </ul>
-        <p class="copyright">
-          {{ if .Site.Author.name }}
-            {{ if .Site.Author.website }}
-              <a href="{{ .Site.Author.website }}">{{ .Site.Author.name }}</a>
-            {{ else }}
-              {{ .Site.Author.name }}
-            {{ end }}
-          {{ end }}
+        {{- end -}}
+      {{ end }}
+      {{ if .Site.Params.rss }}
+      <li>
+        <a href="{{ "index.xml" | absLangURL }}" title="RSS">
+            <i class="font-icon icon-rss"></i>
+        </a>
+      </li>
+      {{ end }}
+    </ul>
+    <p class="copyright">
+      {{ if .Site.Author.name }}
+        {{ if .Site.Author.website }}
+          <a href="{{ .Site.Author.website }}">{{ .Site.Author.name }}</a>
+        {{ else }}
+          {{ .Site.Author.name }}
+        {{ end }}
+      {{ end }}
 
-          &nbsp;&bull;&nbsp;
-          {{ .Site.LastChange.Format "2006" }}
+      &nbsp;&bull;&nbsp;
+      {{ .Site.LastChange.Format "2006" }}
 
-          {{ if .Site.Title }}
-            &nbsp;&bull;&nbsp;
-            <a href="{{ "" | absLangURL }}">{{ .Site.Title }}</a>
-          {{ end }}
-        </p>
-        <!-- Please don't remove this, keep my open source work credited :) -->
-        <p class="copyright">
-          {{ i18n "poweredBy" . | safeHTML }}
-          {{ with .Site.Params.commit }}&nbsp;&bull;&nbsp;[<a href="{{.}}{{ getenv "GIT_COMMIT_SHA" }}">{{ getenv "GIT_COMMIT_SHA_SHORT" }}</a>]{{ end }}
-        </p>
-      </div>
-    </div>
+      {{ if .Site.Title }}
+        &nbsp;&bull;&nbsp;
+        <a href="{{ "" | absLangURL }}">{{ .Site.Title }}</a>
+      {{ end }}
+    </p>
+    <!-- Please don't remove this, keep my open source work credited :) -->
+    <p class="copyright">
+      {{ i18n "poweredBy" . | safeHTML }}
+      {{ with .Site.Params.commit }}&nbsp;&bull;&nbsp;[<a href="{{.}}{{ getenv "GIT_COMMIT_SHA" }}">{{ getenv "GIT_COMMIT_SHA_SHORT" }}</a>]{{ end }}
+    </p>
   </div>
 </footer>
 
