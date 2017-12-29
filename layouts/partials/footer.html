@@ -4,16 +4,16 @@
       {{ range .Site.Data.beautifulhugo.social.social_icons }}
         {{- if isset $.Site.Author .id }}
           <li>
-            <a href="{{ printf .url (index $.Site.Author .id) }}" title="{{ .title }}">
-                <i class="font-icon {{ .icon }}"></i>
+            <a href="{{ printf .url (index $.Site.Author .id) }}"
+            class="font-icon {{ .icon }}" title="{{ .title }}">
             </a>
           </li>
         {{- end -}}
       {{ end }}
       {{ if .Site.Params.rss }}
       <li>
-        <a href="{{ "index.xml" | absLangURL }}" title="RSS">
-            <i class="font-icon icon-rss"></i>
+        <a href="{{ "index.xml" | absLangURL }}" title="RSS"
+        class="font-icon icon-rss">
         </a>
       </li>
       {{ end }}

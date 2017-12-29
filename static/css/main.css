@@ -61,7 +61,7 @@ img {
   max-width: 100%;
 }
 
-/* --- TODO Navbar --- */
+/* --- Navbar --- */
 
 .navbar-custom .nav li a {
     text-transform: uppercase;
@@ -197,13 +197,16 @@ footer a {
   color: #404040;
 }
 
-/* TODO underline issue */
 footer li {
     display: inline-block;
     margin-left: 5px;
     margin-right: 5px;
     font-size: 28px;
     padding: 8px;
+}
+
+a.font-icon {
+    text-decoration: none;
 }
 
 footer .list-inline {
