@@ -33,10 +33,6 @@ Use triple backticks ( ``` ) or triple tilde ( ~~~ ) around code blocks.
 
 Client side highlighting does not require pygments to be installed.
 
-### Disqus support
-
-To use this feature, uncomment and fill out the `disqusShortname` parameter in `config.toml`.
-
 ### Google Analytics
 
 To add Google Analytics, simply sign up to [Google Analytics](http://www.google.com/analytics/) to obtain your Google Tracking ID, and add this tracking ID to the `googleAnalytics` parameter in `config.toml`.
@@ -49,15 +45,15 @@ If the source of your site is in a Git repo, the SHA corresponding to the commit
 [Params]
   commit = "https://github.com/<username>/<siterepo>/tree/"
 ```
-  
+
 This can be achieved by running the next command prior to calling Hugo:
 
 ```
   GIT_COMMIT_SHA=`git rev-parse --verify HEAD` GIT_COMMIT_SHA_SHORT=`git rev-parse --short HEAD`
 ```
-  
+
 See at [xor-gate/xor-gate.org](https://github.com/xor-gate/xor-gate.org) an example of how to add it to a continuous integration system.
-  
+
 ## About
 
 This is a port of the Jekyll theme [Beautiful Jekyll](http://deanattali.com/beautiful-jekyll/) by [Dean Attali](http://deanattali.com/aboutme#contact). It supports most of the features of the original theme.
